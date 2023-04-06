@@ -1,0 +1,248 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    max-width: 540px;
+    min-width: 320px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 45px;
+    border-top: 1px solid rgb(204, 204, 204);
+    border-bottom: 1px solid rgb(204, 204, 204);
+    background-color: rgb(246, 246, 246);
+}
+.search {
+    position: relative;
+    width: 85%;
+    height: 45px;
+    line-height: 45px;
+}
+.search i {
+    position: absolute;
+    display: block;
+    top: 16px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    background: url(../images/sprite.png) no-repeat -59px -279px / 104px;
+}
+.search input {
+    width: 100%;
+    height: 26px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    padding-left: 25px;
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 0 0 5px rgb(207, 207, 207);
+}
+.header a {
+    position: relative;
+    display: block;
+    margin-right: -3%;
+    width: 45px;
+    height: 45px;
+    line-height: 70px;
+    font-size: 12px;
+    color: rgb(46, 170, 224);
+}
+.header a i {
+    position: absolute;
+    display: block;
+    top: 4px;
+    width: 23px;
+    height: 23px;
+    background: url(../images/sprite.png) no-repeat -59px -194px / 104px;
+}
+.banner {
+    margin-top: 44px;
+    height: 113px;
+}
+.banner img {
+    width: 100%;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    line-height: 95px;
+    height: 64px;
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.nav div {
+    position: relative;
+    flex: 4;
+    height: 64px;
+    text-align: center;
+}
+.nav div::before {
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 50px;
+    width: 32px;
+    height: 32px;
+    background: url(../images/localnav_bg.png) no-repeat  0px 0px / 32px;
+}
+.subnav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 270px;
+    margin-top: 5px;
+    color: #fff;
+}
+.subnav-center {
+    position: relative;
+    display: flex;
+    height: 88px;
+    text-align: center;
+    background-color: #FA994D;
+}
+.subnav .subnav-center:nth-child(1) {
+    height: 88px;
+    line-height: 60px;
+    border-radius: 15px 15px 0 0;
+    background-color: #53BCED;
+}
+.subnav-center::after {
+    position: absolute;
+    content: '';
+    left: 30px;
+    top: 35px;
+    width: 121px;
+    height: 47px;
+    background: url(../images/hotel.png) no-repeat bottom center;
+    background-size: 121px;
+}
+.subnav-center::before {
+    content: '海外酒店';
+    position: absolute;
+    color: #fff;
+    top: 10px;
+    left: 60px;
+}
+.subnav-center:nth-child(1)::before {
+    top: -8px;
+} 
+.subnav-center:nth-child(3) {
+    border-radius: 0 0 15px 15px;
+    background-color: #6CD559;
+}
+.subnav-center div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 88px;
+    line-height: 88px;
+}
+.subnav-center div span {
+    flex: 1;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    line-height: 44px;
+}
+.nav-bottom {
+    display: flex;
+    flex-direction: column;
+    height: 116px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 3px 0;
+    text-align: center;
+}
+.nav-bottom div {
+    display: flex;
+    flex: 1;
+}
+.nav-bottom div span {
+    position: relative;
+    flex: 1;
+    padding-top: 35px;
+}
+.nav-bottom div span::before {
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 40px;
+    width: 28px;
+    height: 28px;
+    background: url(../images/subnav-bg.png) no-repeat top center;
+    background-size: 28px;
+}
+.box-hd {
+    position: relative;
+    height: 44px;
+    line-height: 44px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    
+}
+.box-hd::before {
+    position: absolute;
+    float: left;
+    top: 15px;
+    left: 20px;
+    content: '';
+    width: 79px;
+    height: 15px;
+    background: url(../images/hot.png) no-repeat 0 -20px;
+    background-size: 79px;
+}
+.box-hd a {
+    margin-left: 400px;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    background-color: #FF6BC6;
+    border-radius: 20px;
+}
+.box-hd a::after {
+    content: '\e920';
+    font-family: 'icomoon';
+    padding-top: 3px;
+    left: 0;
+}
+.box-bd {
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    background-color: #fff;
+}
+.box-bd div {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+.box-bd div:nth-child(1) {
+    border: 0;
+    flex: 2;
+}
+.box-bd div:nth-child(n+2) {
+    flex: 1;
+    border-top: 1px solid #ccc;
+}
+.box-bd div a:nth-child(1) {
+    border-right: 1px solid #ccc;
+}
+.box-bd div a img {
+    width: 100%;
+}
